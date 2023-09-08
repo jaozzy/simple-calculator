@@ -34,30 +34,33 @@ class Calculadora {
         switch (op) {
             case "+":        
                 r = (valores.n1 + valores.n2);
-                Console.Write("O resultado da soma é: " + r);
+                Console.WriteLine("O resultado da soma é: " + r);
                 break;
             case "-":
                 r = (valores.n1 - valores.n2);
-                Console.Write("O resultado da subtração é: " + r);
+                Console.WriteLine("O resultado da subtração é: " + r);
                 break;
             case "*":
                 r = (valores.n1 * valores.n2);
-                Console.Write("O resultado da multiplicação é: " + r);
+                Console.WriteLine("O resultado da multiplicação é: " + r);
                 break;
             case "/":
                 if (valores.n2 != 0){
                     r = (valores.n1 / valores.n2);
-                    Console.Write("O resultado da divisão é: " + r);
+                    Console.WriteLine("O resultado da divisão é: " + r);
                 }
 
                 else {
-                    Console.Write("É impossível dividir por 0.");
+                    Console.WriteLine("É impossível dividir por 0.");
                 }
                 break;
             default:
                 Console.Write("Opção inválida.");
                 break;
         }
+
+        Console.Write("\nPressione para sair: ");
+        Console.ReadLine();
 
     }
 }
