@@ -60,7 +60,7 @@ class Calculadora {
         }
 
         Console.Write("\nPressione para sair: ");
-        Console.ReadLine();
+        Console.ReadKey();
 
     }
 }
